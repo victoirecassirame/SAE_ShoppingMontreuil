@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<link rel="stylesheet" type="text/css" href="stylePage2.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+
+	<script src="./PAGE2.js"></script>
+	<script>
+		function init() {
+			shops.forEach((_,idx)=>displayShopBulle(idx))
+		}
+	</script>
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="https://unpkg.com/tippy.js@6"></script>
+	<title>Shopping Tour</title>
+</head>
+<body onLoad="init()">
+	<!--header-->
+	<header>
+        <div class="logo"><a href="barcode-solid.svg"> <img src="barcode-solid.svg"  alt="logo"> </a> <!-- logo du site qui amène à la page d'accueil-->
+        </div>
+        <div class="titre">Shopping Montreuil</div>
+        </header>
+        <div class="espace"></div>
+        <nav>
+        <div class="menu">
+            <div class="item item1" ><a href="page1.html">Accueil</a></div>
+            <div class="item item2" id ="actualpage"><a href="page2.html">The Tour</a></div>
+            <div class="item item3"><a href="page3.html">Mentions Légales</a></div>
+        </div>
+        </nav>
+        <div class="espace1"></div>
+	<!--Fin Menu/Header-->
+	<!--main-->
+	<main>
+		<!--PARTIE 1-->
+		<h1>Go Shopping in Montreuil</h1>
+		<section>
+			<div class="paragraphe1">
+				<div>
+					<img src="shoppingBag.png" alt="shopping bag picture" id="shopBag">
+				</div>
+
+				<div id="paragrapheIntro">
+					<p>Welcome to all students, we hope you're getting used to France!
+					This page displays a little gathering of some useful informations about where to go shopping in Montreuil.
+					</p>
+					<p>This page is divided into 3 parts: <br> Firstly, the introduction that you're now reading.<br>
+					Secondly, you'll find a little <a href="#anchortour">tour</a> we made for you, it includes
+					several types of shops (for school, food, beauty, clothing and so on).
+					Of course, this tour was made so that you can complete it in an afternoon but they are also some nice shops a little further, don't hesitate to ask us about them!
+					<br>
+					Lower, you'll find  useful <a href="#anchorinformations">informations about the shops</a> themselves.
+					</p>
+					<p>We hope this page provide you the informations that you need and that you will enjoy the tour we propose!</p>
+				</div>
+			</div>
+		</section>
+
+		<!--PARTIE 2-->
+		<a id="anchortour"></a>
+			<h2>The Tour</h2>
+		<section>
+		<!--CERCLE et PARAGRAPHE-->
+			<div id="circleAndPar">
+
+				<!--Le Cercle-->
+				<div id="cercle">
+					<div id="circleout">
+
+						<div id="circlein"></div>
+
+						<div class="circleitem" style="transform: rotate(0deg)">
+							<a id="shopcarrefour" style="transform: rotate(-0deg)">Carrefour</a>
+						</div>
+						<div id="rotate1" class="circleitem">
+							<a  id="shoplebergerac" style="transform: rotate(-60deg)">Le Bergerac</a>
+						</div>
+						<div class="circleitem" style="transform: rotate(120deg)">
+							<a  id="shopnonante" style="transform: rotate(-120deg)">Nonante</a>
+						</div>
+						<div class="circleitem" style="transform: rotate(180deg)">
+							<a id="shopstorybulle" style="transform: rotate(-180deg)">StoryBulle</a>
+						</div>
+						<div class="circleitem" style="transform: rotate(240deg)">
+							<a id="shopbeersandrecords" style="transform: rotate(-240deg)">Beers And Records</a>
+						</div>
+						<div class="circleitem" style="transform: rotate(300deg)">
+							<a  id="shopgrandangle" style="transform: rotate(-300deg)">Grand Angle</a>
+						</div>
+					</div>
+					<div id="ShopBulle" class="flex justify-center items-center"></div>
+				</div>
+
+				<!--Le paragraphe-->
+				<div id="paragrapheTour">
+					<p>Departure : Rue de l'église (about 3 minutes from Mairie de Montreuil)</p>
+
+					<ol class="text-justify">
+						<li>The 1st step is a bar called Le Bergerac.</li>
+						<li>The 2nd one is a grocery shop where you can buy natural products aso.</li>
+						<li>For out 3rd step, we recommand a book shop called StoryBulle. They have a great books selection 
+							and some even are in english which is why we chose to show you this shop!
+						It aims a public from 10 to adult so you will easily find what you're looking for.</li>
+						<li>Next, we have "Beers and Records", you can already tell from the name that it's a really cool place.
+						Plus, the bar owner is reaally nice, he grew up in the city so he knows good tips.</li>
+						<li>Following, we have an outside mall with some nice shops of differents types.
+						It's very pleasant to go shopping there with your friends!</li>
+						<li>Finally, a little less entertaining but necessary : You can go check the Carrefour. It's a big superMarket,really practical.</li>
+					</ol>
+
+					<p>End of the tour : You are near the line 9 of the metro, at the station "Mairie de montreuil".</p>
+				</div>
+			</div>
+		</section>
+
+		<!--PARTIE 3-->
+		<a id="anchorinformations"></a>
+		<h2>The Shops</h2>
+			<section>
+				<div class="shopBG">
+					<h3>Le Bergerac <span>(Bar tobacconist)</span></h3>
+						<div class="allFourInfo"> 
+							<div class="imgEtTableEtInfo">
+								<div class="imgEtTable">
+									<img src="./imageShop/Bergerac.jpeg" alt="Picture of Le Bergerac" class="shopImages">
+
+									<table>
+										<tr><td>Hours: </td><td>Monday</td><td>6:30AM - 8PM </td></tr>
+										<tr><td>     </td><td>Tuesday</td> <td>6:30AM - 8PM </td></tr>
+										<tr><td>     </td><td>Wednesday</td> <td>6:30AM - 8PM </td></tr>
+										<tr><td>     </td><td>Thursday</td> <td>6:30AM - 8PM </td></tr>
+										<tr><td>     </td><td>Friday</td> <td>6:30AM - 8PM </td></tr>
+										<tr><td>     </td><td>Saturday</td> <td>8AM - 8PM </td></tr>
+										<tr><td>     </td><td>Sunday</td> <td>8AM - 1PM</td></tr>
+									</table>
+							</div>
+
+							<div class="info">
+							<p>Direction: 29 Rue de l’église</p>
+							</div>
+						</div>
+
+
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7041138397226!2d2.4412201156745716!3d48.86385237928799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b29a02acb%3A0x7b5a6c57f8aa825e!2sStella%20Artois%20Tabac!5e0!3m2!1sen!2sfr!4v1670109757854!5m2!1sen!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+				<hr>
+
+					<div class="shopBG">
+						<h3>Nonante <span>(Grocery Store)</span></h3>
+							<div class="allFourInfo">
+								<div class="imgEtTableEtInfo">
+									<div class="imgEtTable">
+										<img src="./imageShop/nonante.jpeg" alt="Picture of Nonante" class="shopImages">
+
+										<table>
+											<tr><td>Hours: </td><td>Monday</td><td>Closed</td></tr>
+											<tr><td>     </td><td>Tuesday</td> <td>11AM - 2PM / 4:30PM - 7:30PM</td></tr>
+											<tr><td>     </td><td>Wednesday</td> <td>11AM - 2PM / 4:30PM - 7:30PM</td></tr>
+											<tr><td>     </td><td>Thursday</td> <td>11AM - 2PM / 4:30PM - 7:30PM </td></tr>
+											<tr><td>     </td><td>Friday</td> <td>11AM - 2PM / 4:30PM - 7:30PM </td></tr>
+											<tr><td>     </td><td>Saturday</td> <td>10:30AM - 7:30PM </td></tr>
+											<tr><td>     </td><td>Sunday</td> <td>Closed</td></tr>
+										</table>
+									</div>
+
+									<div class="info">
+										Direction: 21 Rue de l’église<br>
+
+										<!--Infobulle -->
+										Access the Facebook page:
+										<div class="containerInfobulle">
+											<div class="infobulle">https://www.facebook.com/epicerienonante/</div>
+											<div><a href="https://www.facebook.com/epicerienonante" target="_blank"><img src="fb.png" class="fblogo object" alt="logo de Facebook"></a></div>
+										</div>
+									</div>
+								</div>
+
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7033103319036!2d2.4431293999999983!3d48.8638677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b2e950b31%3A0x8a4ae242cbb95400!2sNonante!5e0!3m2!1sfr!2sfr!4v1668273975504!5m2!1sfr!2sfr"></iframe>
+							</div>
+						</div>
+
+					<hr>
+
+						<div class="shopBG">
+							<h3>StoryBulle <span>(Book Shop)</span></h3>
+							<div class="allFourInfo">
+									<div class="imgEtTableEtInfo">
+										<div class="imgEtTable">
+											<img src="./imageShop/storybulle.jpeg" alt="Picture of StoryBulle" class="shopImages">
+
+											<table>
+												<tr><td>Hours: </td><td>Monday</td><td>3:30PM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Tuesday</td> <td>10:30AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Wednesday</td> <td>10:30AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Thursday</td> <td>10:30AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Friday</td> <td>10:30AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Saturday</td> <td>10:30AM - 7:30PM </td></tr>
+												<tr><td>     </td><td>Sunday</td> <td>Closed</td></tr>
+											</table>
+										</div>
+
+										<div class="info">
+											Direction: 21 Rue de l’église<br>
+											<!--Infobulle -->
+											<div class="containerInfobulle">
+												<div class="infobulleText">https://www.canalbd.net/storybulle</div>
+												<div><a href="https://www.canalbd.net/storybulle" target="_blank" class="object"> Access the StoryBulle website </a></div>
+											</div>
+										</div>
+									</div>
+
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7031263427493!2d2.44093535129838!3d48.86387120817301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b2e950b31%3A0x3ba2c8cc9fab30cb!2sStorybulle!5e0!3m2!1sfr!2sfr!4v1668273996470!5m2!1sfr!2sfr"></iframe>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class="shopBG">
+							<h3>Beers And Records <span>(Record shop, home-made beer merchant)</span></h3>
+								<div class="allFourInfo">
+									<div class="imgEtTableEtInfo">
+										<div class="imgEtTable">
+											<img src="./imageShop/beersandrecordsinside.jpeg" alt="Picture of Beers and Records" class="shopImages">
+											<table>
+												<tr><td>Hours: </td><td>Monday</td><td>1:30PM - 9:30PM</td></tr>
+												<tr><td>     </td><td>Tuesday</td> <td>1:30PM - 9:30PM</td></tr>
+												<tr><td>     </td><td>Wednesday</td> <td>1:30PM - 9:30PM</td></tr>
+												<tr><td>     </td><td>Thursday</td> <td>1:30PM - 9:30PM</td></tr>
+												<tr><td>     </td><td>Friday</td> <td>1:30PM - 9:30PM</td></tr>
+												<tr><td>     </td><td>Saturday</td> <td>1:30PM - 9:30PM </td></tr>
+												<tr><td>     </td><td>Sunday</td> <td>Closed</td></tr>
+											</table>
+										</div>
+
+										<div class="info">
+											Direction: 17 Rue de l’église<br>
+
+											<!--Infobulle -->
+											Access the Facebook page:
+											<div class="containerInfobulle">
+												<div class="infobulle">https://www.facebook.com/beersandrecords93</div>
+												<div><a href="https://www.facebook.com/beersandrecords93" target="_blank"><img src="fb.png" class="fblogo object" alt="logo de Facebook"></a></div>
+											</div>
+										</div>
+									</div>
+
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7025861503553!2d2.440645951298365!3d48.8638815081724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5ef6d7c0f5%3A0x74563793f9190b!2sBeers%20%26%20Records%20Disquaire%20%2F%20cave%20%C3%A0%20bi%C3%A8res!5e0!3m2!1sfr!2sfr!4v1668274021264!5m2!1sfr!2sfr"></iframe>
+							</div>
+						</div>
+
+
+			<hr>
+
+						<div class="shopBG">
+							<h3>Grand Angle <span>(Shopping center)</span></h3>
+								<div class="allFourInfo">
+									<div class="imgEtTableEtInfo">
+										<div class="imgEtTable">
+											<img src="./imageShop/grandangleoutside.jpeg" alt="Picture of the Grand Angle mall" class="shopImages">
+
+											<table>
+												<tr><td>Hours: </td><td>Monday</td><td>10AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Tuesday</td> <td>10AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Wednesday</td> <td>10AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Thursday</td> <td>10AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Friday</td> <td>10AM - 7:30PM</td></tr>
+												<tr><td>     </td><td>Saturday</td> <td>10AM - 7:30PM </td></tr>
+												<tr><td>     </td><td>Sunday</td> <td>Closed</td></tr>
+											</table>
+										</div>
+
+										<div class="info">
+											Direction: Rue des Lumières<br>
+											<!--Infobulle -->
+											<div class="containerInfobulle">
+												<div class="infobulleText">https://www.montreuil-grandangle.com/</div>
+												<div><a href="https://www.montreuil-grandangle.com/" target="_blank" class="object">Access the Grand Angle website </a></div>
+											</div>
+										</div>
+									</div>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.831921995806!2d2.439282915674483!3d48.86141537928786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b90cfde45%3A0xfb34650aa066b5ac!2sGrand%20Angle%20Mall!5e0!3m2!1sen!2sfr!4v1670114174744!5m2!1sen!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+
+<hr>
+
+						<div class="shopBG">
+							<h3>Carrefour <span>(Super Market)</span></h3>
+								<div class="allFourInfo">
+									<div class="imgEtTableEtInfo">
+										<div class="imgEtTable">
+											<img src="./imageShop/carrefouroutside.jpeg" alt="Picture of StoryBulle" class="shopImages">
+
+											<table>
+									        	<tr><td>Hours: </td><td>Monday</td><td>8:30AM - 9:00PM</td></tr>
+									        	<tr><td>     </td><td>Tuesday</td> <td>8:30AM - 9:00PM</td></tr>
+									        	<tr><td>     </td><td>Wednesday</td> <td>8:30AM - 9:00PM</td></tr>
+									        	<tr><td>     </td><td>Thursday</td> <td>8:30AM - 9:00PM</td></tr>
+									        	<tr><td>     </td><td>Friday</td> <td>8:30AM - 9:00PM</td></tr>
+									        	<tr><td>     </td><td>Saturday</td> <td>8:30AM - 9:00PM</td></tr>
+									        	<tr><td>     </td><td>Sunday</td> <td>9:00AM - 12:30PM</td></tr>
+									        </table>
+								    	</div>
+
+										<div class="info">
+											Direction: 5 Rue Franklin<br>
+											<!--Infobulle -->
+											<div class="containerInfobulle">
+												<div class="infobulleCarrefour">https://www.https://www.carrefour.fr/magasin/market-montreuil-coeur-de-ville</div>
+												<div><a href="https://www.https://www.carrefour.fr/magasin/market-montreuil-coeur-de-ville" target="_blank" class="object">Access the Carrefour website </a></div>
+											</div>
+										</div>
+									</div>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8198216439564!2d2.439927351298287!3d48.8616461083298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d6b357710c5%3A0xd022e73f4653e28c!2sCarrefour%20Drive%20Montreuil%20Coeur%20De%20Ville!5e0!3m2!1sfr!2sfr!4v1668274064354!5m2!1sfr!2sfr"></iframe>
+							</div>
+						</div>
+				</section>
+		</main>
+		<footer> <p>Fiona Borgazzi, Victoire Cassirame, Oumaima El Khadraoui - Novembre 2022</p></footer>
+	</body>
+</html>
